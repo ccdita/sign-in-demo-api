@@ -1,0 +1,23 @@
+{
+  "name": "sign-in-demo-api",
+  "version": "1.0.0",
+  "description": "Test suite for verifying login flow via Playwright API testing",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ccdita/sign-in-demo-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ccdita/sign-in-demo-api/issues"
+  },
+  "homepage": "https://github.com/ccdita/sign-in-demo-api#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.9.0"
+  }
+}
