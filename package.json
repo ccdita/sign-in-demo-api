@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Test suite for verifying login flow via Playwright API testing",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test-api-login-c": "npx playwright test ./tests/setup/auth.setup.ts --project=chromium"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ccdita/sign-in-demo-api.git"
