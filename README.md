@@ -21,6 +21,7 @@ Simply using the API `POST` HTTP request with valid credentials is not enough to
 Authenticating via API is easier and faster than interacting with the UI. By authenticating via the API, we don't need to load the UI, which can slow tests down or occasionally fail.
 
 ## References
+- [DemoQA Website](https://demoqa.com/)
 - [Installation on Playwright Docs](https://playwright.dev/docs/intro)
 - [Global setup and teardown on Playwright Docs](https://playwright.dev/docs/test-global-setup-teardown)
 - [Authenticate with API request on Playwright Docs](https://playwright.dev/docs/auth#authenticate-with-api-request)
