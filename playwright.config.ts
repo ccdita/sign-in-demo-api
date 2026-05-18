@@ -44,19 +44,28 @@ export default defineConfig({
 
   /* Configure projects for major browsers */
   projects: [
+    // Set up auth.setup.ts as a project dependency to be run prior to all other tests
+    {
+      name: 'Authenticate with API request',
+      testMatch: /auth\.setup\.ts/,
+    },
+
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
+      dependencies: ['Authenticate with API request'],
     },
 
     {
       name: 'firefox',
       use: { ...devices['Desktop Firefox'] },
+      dependencies: ['Authenticate with API request'],
     },
 
     {
       name: 'webkit',
       use: { ...devices['Desktop Safari'] },
+      dependencies: ['Authenticate with API request'],
     },
 
     {
@@ -65,6 +74,7 @@ export default defineConfig({
         baseURL: 'https://demoqa.com/',
         ...devices['Desktop Chrome']
       },
+      dependencies: ['Authenticate with API request'],
     },
 
     {
@@ -73,6 +83,7 @@ export default defineConfig({
         baseURL: 'https://demoqa.com/',
         ...devices['Desktop Firefox']
       },
+      dependencies: ['Authenticate with API request'],
     },
 
     {
@@ -81,6 +92,7 @@ export default defineConfig({
         baseURL: 'https://demoqa.com/',
         ...devices['Desktop Safari']
       },
+      dependencies: ['Authenticate with API request'],
     },
 
     /* Test against mobile viewports. */
